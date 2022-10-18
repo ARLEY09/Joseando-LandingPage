@@ -11,7 +11,7 @@ body{
 .main-container{
                 width: 375px;
                 margin: 0 auto 25px;
-                @include mixins.desktop-view(1440px);
+                @include mixins.desktop-view(1080px);
 }
 
 .navbar{
