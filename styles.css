@@ -111,7 +111,7 @@ body {
   width: 240px;
   height: 60px;
   display: block;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 @media (min-width: 1440px) {
   .header__button {
@@ -130,12 +130,12 @@ body {
 .header__screen-mockups {
   width: 300px;
   display: block;
-  margin: 0 auto 100px;
+  margin: 0 auto 50px;
 }
 @media (min-width: 1440px) {
   .header__screen-mockups {
-    width: 1020px;
-    height: 725px;
+    width: 850px;
+    height: 600px;
     font-size: unset;
   }
 }
@@ -329,6 +329,10 @@ body {
 }
 .newsletter-contact__description {
   text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

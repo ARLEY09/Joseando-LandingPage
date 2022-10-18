@@ -64,13 +64,13 @@ body{
         @include mixins.button(variables.$azul-oscuro, variables.$azul-oscuro, variables.$white, 16px, 240px, 60px);
         @include mixins.desktop-view(480px,96px,20px);
         @include mixins.button-hover(variables.$cyan-oscuro, variables.$white, variables.$cyan-oscuro, 22px);
-        margin-bottom: 100px;
+        margin-bottom: 40px;
     }
     &__screen-mockups{
         width: 300px;
         display: block;
-        margin: 0 auto 100px;
-        @include mixins.desktop-view(1020px, 725px);
+        margin: 0 auto 50px;
+        @include mixins.desktop-view(850px, 600px);
     }
 }
 
@@ -144,4 +144,8 @@ body{
     &__description{
         text-align: center;
     }
+}
+
+a{
+    text-decoration: none;
 }
