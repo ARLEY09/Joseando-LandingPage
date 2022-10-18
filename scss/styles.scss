@@ -9,9 +9,9 @@ body{
 }
 
 .main-container{
-    width: 375px;
+    width: 360px;
     margin: 0 auto 25px;
-    @include mixins.desktop-view(1440px);
+    @include mixins.desktop-view(1280px);
 }
 
 .navbar{
@@ -19,10 +19,11 @@ body{
     display: flex;
     justify-content: space-between;
     margin: 25px auto 100px;
-    @include mixins.desktop-view(1300px);
+    @include mixins.desktop-view(1100px);
 
     &__logo{
         width: 164px;
+        height: 36px;
         @include mixins.desktop-view(240px);
     }
 

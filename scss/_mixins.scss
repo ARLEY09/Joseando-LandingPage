@@ -2,7 +2,7 @@
 
 @mixin desktop-view($width, $height: unset, $fn-size: unset){
 
-    @media (min-width: 1440px){
+    @media (min-width: 1280px){
         width: $width;
         height: $height;
         font-size: $fn-size;
@@ -61,7 +61,7 @@
 }
 
 @mixin flexSections-desktop($direccion: row){
-    @media(min-width: 1440px){
+    @media(min-width: 1280px){
         flex-direction: $direccion;
         justify-content: space-around;
 
@@ -86,7 +86,7 @@
 }
 
 @mixin stats-desktop {
-    @media(min-width: 1440px){
+    @media(min-width: 1280px){
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -107,7 +107,7 @@
 }
 
 @mixin equipo-desktop {
-    @media(min-width: 1440px){
+    @media(min-width: 1280px){
         display: flex;
         flex-direction: row;
         justify-content: space-around;

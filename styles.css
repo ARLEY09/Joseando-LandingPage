@@ -6,12 +6,12 @@ body {
 }
 
 .main-container {
-  width: 375px;
+  width: 360px;
   margin: 0 auto 25px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .main-container {
-    width: 1440px;
+    width: 1280px;
     height: unset;
     font-size: unset;
   }
@@ -22,17 +22,18 @@ body {
   justify-content: space-between;
   margin: 25px auto 100px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .navbar {
-    width: 1300px;
+    width: 1100px;
     height: unset;
     font-size: unset;
   }
 }
 .navbar__logo {
   width: 164px;
+  height: 36px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .navbar__logo {
     width: 240px;
     height: unset;
@@ -52,7 +53,7 @@ body {
   height: 40px;
   display: block;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .navbar__button {
     width: 240px;
     height: 40px;
@@ -75,7 +76,7 @@ body {
   margin: 0 auto 36px;
   color: rgb(8, 44, 78);
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .header__title {
     width: 1010px;
     height: unset;
@@ -90,7 +91,7 @@ body {
   width: 290px;
   color: rgb(8, 44, 78);
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .header__description {
     width: 800px;
     height: unset;
@@ -113,7 +114,7 @@ body {
   display: block;
   margin-bottom: 40px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .header__button {
     width: 480px;
     height: 96px;
@@ -132,7 +133,7 @@ body {
   display: block;
   margin: 0 auto 50px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .header__screen-mockups {
     width: 850px;
     height: 600px;
@@ -145,7 +146,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .section-stats {
     display: flex;
     flex-direction: row;
@@ -214,7 +215,7 @@ body {
   font-size: 1rem;
   width: 330px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .section-creciendo-juntos {
     flex-direction: row;
     justify-content: space-around;
@@ -256,7 +257,7 @@ body {
   font-size: 1rem;
   width: 330px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .section-meet-people {
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -300,7 +301,7 @@ body {
   font-size: 1rem;
   width: 330px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .section-collaborators {
     flex-direction: row;
     justify-content: space-around;
@@ -350,7 +351,7 @@ a {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .section-equipo {
     display: flex;
     flex-direction: row;
