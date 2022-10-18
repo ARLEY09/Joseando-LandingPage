@@ -3,15 +3,15 @@
 
 
 body{
-    background-color: $azul-oscuro;
+    background-color: variables.$white;
     font-family: variables.$body-font;
     color: variables.$cyan-oscuro;
 }
 
 .main-container{
-    width: 375px;
-    margin: 0 auto 25px;
-    @include mixins.desktop-view(1440px);
+                width: 375px;
+                margin: 0 auto 25px;
+                @include mixins.desktop-view(1440px);
 }
 
 .navbar{
@@ -75,70 +75,69 @@ body{
 }
 
 .section-stats{
-    @include mixins.stats-desktop;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+                @include mixins.stats-desktop;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
     .comunities{
-        width: 330px;
-  
-        margin-bottom: 40px;
-        &__section-logo{
-            width: 64px;
-            display: block;
-            margin: 0 auto;
-        }
+                width: 330px;
+        
+                margin-bottom: 40px;
+                &__section-logo{
+                    width: 64px;
+                    display: block;
+                    margin: 0 auto;
+                }
 
-        &__section-logo-cohete{
-            width: 164px;
-            display: block;
-            margin: 0 auto;
-        }
+                &__section-logo-cohete{
+                    width: 164px;
+                    display: block;
+                    margin: 0 auto;
+                }
 
-        &__section-stats{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 4rem;
-            margin: 0;
-        }
-        &__description{
-             font-size: 1rem;
-             text-align: center;
-             display: block;
-             margin: 0 auto;
+                &__section-stats{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: 4rem;
+                    margin: 0;
+                }
+                &__description{
+                    font-size: 1rem;
+                    text-align: center;
+                    display: block;
+                    margin: 0 auto;
              
         }
     }
 }
 
 .section-creciendo-juntos{
-    padding: 10px;
-    @include mixins.flexSections;
-    @include mixins.flexSections-desktop;
-    background-color: rgb(243, 243, 243)
+                          padding: 10px;
+                         @include mixins.flexSections;
+                         @include mixins.flexSections-desktop;
+                         background-color: rgb(243, 243, 243)
 }
 .section-meet-people{
-    @include mixins.flexSections;
-    @include mixins.flexSections-desktop(row-reverse);
+                    @include mixins.flexSections;
+                    @include mixins.flexSections-desktop(row-reverse);
 }
     
 .section-collaborators{
-    margin-bottom: 20px !important;
-    @include mixins.flexSections;
-    @include mixins.flexSections-desktop;
-    background-color: rgb(243, 243, 243)
+                        margin-bottom: 20px !important;
+                        @include mixins.flexSections;
+                        @include mixins.flexSections-desktop;
+                        background-color: rgb(243, 243, 243)
 }
 
 .newsletter{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: variables.$casi-negro;
-    color: white;
-
+            padding-top: 30px;
+            padding-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: variables.$casi-negro;
+            color: white;
 }
 
 .newsletter-contact{
@@ -157,11 +156,11 @@ a{
 }
 
 .section-equipo{
-    margin-top: 40px;
-    @include mixins.equipo-desktop;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+                margin-top: 40px;
+                @include mixins.equipo-desktop;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
     .comunities{
         width: 330px;
   
@@ -192,10 +191,10 @@ a{
 }
 
 .equipo-title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 80px;
-    font-size: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 80px;
+            font-size: 2.5rem;
 }
