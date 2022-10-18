@@ -69,16 +69,19 @@ body{
     &__screen-mockups{
         width: 300px;
         display: block;
-        margin: 0 auto 138px;
+        margin: 0 auto 100px;
         @include mixins.desktop-view(1020px, 725px);
     }
 }
 
 .section-stats{
+    @include mixins.stats-desktop;
     display: flex;
     flex-direction: column;
     align-items: center;
     .comunities{
+        width: 330px;
+  
         margin-bottom: 40px;
         &__section-logo{
             width: 64px;
@@ -98,16 +101,21 @@ body{
              text-align: center;
              display: block;
              margin: 0 auto;
+             
         }
     }
 }
 
 .section-creciendo-juntos{
     @include mixins.flexSections;
+    @include mixins.flexSections-desktop;
 }
 .section-meet-people{
     @include mixins.flexSections;
+    @include mixins.flexSections-desktop(row-reverse);
 }
+    
 .section-collaborators{
     @include mixins.flexSections;
+    @include mixins.flexSections-desktop;
 }

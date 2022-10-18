@@ -59,3 +59,45 @@
     }
    }
 }
+
+@mixin flexSections-desktop($direccion: row){
+    @media(min-width: 1440px){
+        flex-direction: $direccion;
+        justify-content: space-around;
+
+        .image-container__illustration{
+            width: 580px;
+           }
+           .description{
+            &__title{
+                font-family: variables.$headings-font;
+                font-size: 2.5rem;
+                text-align: left;
+                margin-bottom: 10px;
+            }
+            &__content{
+                text-align: left;
+                font-size: 1.5rem;
+                width: 450px;
+        
+            }
+           }
+    }
+}
+
+@mixin stats-desktop {
+    @media(min-width: 1440px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 400px;
+        .comunities{
+            &__section-stats{
+                font-size: 6rem !important;
+            }
+            &__description{
+                font-size: 1.7rem !important;     
+            }
+        }    
+    }
+}
