@@ -1,0 +1,113 @@
+@use 'variables';
+@use 'mixins';
+
+
+body{
+    background-color: white;
+    font-family: variables.$body-font;
+    color: variables.$cyan-oscuro;
+}
+
+.main-container{
+    border: 1px solid red;
+    width: 375px;
+    margin: 0 auto 25px;
+    @include mixins.desktop-view(1440px);
+}
+
+.navbar{
+    //border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px auto 100px;
+    @include mixins.desktop-view(1300px);
+
+    &__logo{
+        width: 164px;
+        @include mixins.desktop-view(240px);
+    }
+
+    &__button{
+        border: none;
+        border-radius: 50px;
+        @include mixins.button(variables.$white, variables.$azul-claro, variables.$azul-claro, 14px, 164px, 40px, false);
+        @include mixins.desktop-view(240px,40px,18px);
+        @include mixins.button-hover(variables.$azul-claro, variables.$white, unset);
+    }
+}
+
+.header{
+    &__title{
+        font-family: variables.$headings-font;
+        text-align: center;
+        width: 256px;
+        font-size: 1.48rem;
+        margin: 0 auto 36px;
+        color: variables.$cyan-oscuro;
+        @include mixins.desktop-view(1010px, unset, 3rem)
+    }
+    &__description{
+        text-align: center;
+        margin: 0 auto 49px;
+        font-weight: 600;
+        font-size: 1rem;
+        width: 290px;
+        color: variables.$cyan-oscuro;
+        @include mixins.desktop-view(800px, unset, 2rem)
+
+    }
+    &__button{
+        border: none;
+        border-radius: 50px;
+        display: block;
+        margin: 0 auto;
+        @include mixins.button(variables.$azul-oscuro, variables.$azul-oscuro, variables.$white, 16px, 240px, 60px);
+        @include mixins.desktop-view(480px,96px,20px);
+        @include mixins.button-hover(variables.$cyan-oscuro, variables.$white, variables.$cyan-oscuro, 22px);
+        margin-bottom: 120px;
+    }
+    &__screen-mockups{
+        width: 300px;
+        display: block;
+        margin: 0 auto 138px;
+        @include mixins.desktop-view(1020px, 725px);
+    }
+}
+
+.section-stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .comunities{
+        margin-bottom: 40px;
+        &__section-logo{
+            width: 64px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        &__section-stats{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 4rem;
+            margin: 0;
+        }
+        &__description{
+             font-size: 1rem;
+             text-align: center;
+             display: block;
+             margin: 0 auto;
+        }
+    }
+}
+
+.section-creciendo-juntos{
+    @include mixins.flexSections;
+}
+.section-meet-people{
+    @include mixins.flexSections;
+}
+.section-collaborators{
+    @include mixins.flexSections;
+}
