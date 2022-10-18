@@ -98,6 +98,31 @@
             &__description{
                 font-size: 1.7rem !important;     
             }
+            &__section-logo-cohete{
+                margin-top:-50px !important;
+                width: 164px !important;
+            }
+        }    
+    }
+}
+
+@mixin equipo-desktop {
+    @media(min-width: 1440px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 400px;
+        .comunities{
+            &__section-logo:hover{
+                width: 250px;
+            }
+            &__section-stats{
+                font-size: 2rem !important;
+            }
+            &__description{
+                font-size: 1.2rem !important;
+                width: 300px;   
+            }
         }    
     }
 }

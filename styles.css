@@ -158,6 +158,10 @@ body {
   .section-stats .comunities__description {
     font-size: 1.7rem !important;
   }
+  .section-stats .comunities__section-logo-cohete {
+    margin-top: -50px !important;
+    width: 164px !important;
+  }
 }
 .section-stats .comunities {
   width: 330px;
@@ -165,6 +169,11 @@ body {
 }
 .section-stats .comunities__section-logo {
   width: 64px;
+  display: block;
+  margin: 0 auto;
+}
+.section-stats .comunities__section-logo-cohete {
+  width: 164px;
   display: block;
   margin: 0 auto;
 }
@@ -333,6 +342,64 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.section-equipo {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1440px) {
+  .section-equipo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 400px;
+  }
+  .section-equipo .comunities__section-logo:hover {
+    width: 250px;
+  }
+  .section-equipo .comunities__section-stats {
+    font-size: 2rem !important;
+  }
+  .section-equipo .comunities__description {
+    font-size: 1.2rem !important;
+    width: 300px;
+  }
+}
+.section-equipo .comunities {
+  width: 330px;
+  margin-bottom: 40px;
+}
+.section-equipo .comunities__section-logo {
+  width: 192px;
+  display: block;
+  margin: 0 auto;
+}
+.section-equipo .comunities__section-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.7rem;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.section-equipo .comunities__description {
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.equipo-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 2.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
